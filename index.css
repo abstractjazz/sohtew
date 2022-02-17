@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Corinthia:wght@700&family=Kaisei+Decol&family=Oswald:wght@200;300;400&display=swap');
+
+#container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:  repeat(5,1fr);
+    font-family: 'Kaisei Decol', serif;
+    font-size: 2.5em;
+    grid-area: content;
+}
+
+.grid-item {
+    border: black 5px solid;
+} 
+
+#nice-to-meet{
+    grid-column-start: span 1;
+    grid-row-start: span 3;
+    font-size: 2em;
+}
+
+#my-name {
+    grid-column-start: span 8;
+    grid-row-start: span 2;
+    font-size: 0.85em;
+}
+
+#purpose {
+    grid-column-start: span 9;
+    font-size: 0.85em;
+}
+
+#greeting {
+    background-color: black;
+}
+
+#greeting img{
+    width: 100%;
+    height: auto;
+}
+
+#poetry {
+    font-size: 0.45em;
+    color: rgb(255, 174, 0);
+    background-color: black;
+}
+
+#microphone {
+    font-size: 0.45em;
+}
+
+#co-op {
+    font-size: 0.45em;
+}
+
+#thank-you {
+    grid-column-start: span 7;
+    font-size: 0.65em;
+}
+
+#peace {
+    font-size: 1em;
+    padding-left: 4.8vw;
+    background-color: black;
+}
+
+@media only screen and (max-width: 1330px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 1240px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-item {
+        border: black 2px solid;
+    }
+    .grid-item.invisible{
+       display: none;
+    }
+}
