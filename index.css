@@ -52,9 +52,15 @@
 
 #microphone {
     font-size: 0.45em;
+    background-color: black;
+}
+
+#microphone a {
+    color: white;
 }
 
 #co-op {
+    background-color: black;
     font-size: 0.45em;
 }
 
@@ -69,23 +75,30 @@
     background-color: black;
 }
 
-@media only screen and (max-width: 1330px) {
-    #container{
-        display: flex;
-        flex-direction: column;
-    }
-
+.para-style {
+    color: #e25048;
 }
 
-@media only screen and (max-width: 1240px) {
+
+@media only screen and (max-width: 1275px) {
+   
     #container{
         display: flex;
         flex-direction: column;
     }
+
     .grid-item {
         border: black 2px solid;
+       
     }
     .grid-item.invisible{
        display: none;
     }
+
+    .para-style {
+        color: #FE6D0B;
+    }
+    
+
 }
+
